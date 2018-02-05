@@ -31,7 +31,7 @@ def echo_message(message, channel, user):
 	)
 
 if sclient.rtm_connect(with_team_state=False):
-	print "Running"
+	print ("Running")
 	while True:
 		message, channel, user = parse_command(sclient.rtm_read())
 		
@@ -40,4 +40,4 @@ if sclient.rtm_connect(with_team_state=False):
 
 		time.sleep(1)
 else:
-	print "Connection failed"
+	print ("Connection failed")
