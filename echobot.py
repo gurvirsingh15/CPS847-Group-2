@@ -10,7 +10,8 @@ MENTION_REGEX = "<.*>(.*)"
 
 def extract_message(message):
 	matches = re.search(MENTION_REGEX, message)
-	return matches.group(1)
+	if (not (matches == None)):
+		return matches.group(1)
 
 def parse_command(information_recieved):
 	for item in information_recieved:
