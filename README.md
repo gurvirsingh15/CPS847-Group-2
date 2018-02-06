@@ -1,7 +1,7 @@
-# CPS847-Group-2
+# CPS847-Group-2 Assignment 1
 
 
-## Weatherbot & Echobot
+## Weatherbot & Echobot (Question 14 & 19)
 
 
 ### Requirements
@@ -18,23 +18,28 @@ the slackbot api key:
 
 ```
 # .env
-SLACKBOT_API_KEY="the slackbot api key"
-OPENWEATHER_API_KEY="the openweather api key"
+WEATHERBOT_API_KEY="insert the weatherbot api key" //TO CHANGE
+ECHOBOT_API_KEY="insert the echobot api key"       //TO CHANGE
+OPENWEATHER_API_KEY="the openweather api key"      //TO CHANGE
 ```
 
 Alternatively, you can export these before use:
 
 ```
-$ export SLACKBOT_API_KEY="the slackbot api key"
-$ export OPENWEATHER_API_KEY="the openweather api key"
+$ export WEATHERBOT_API_KEY="insert the weatherbot api key" //TO CHANGE
+$ export ECHOBOT_API_KEY="insert the echobot api key"              //TO CHANGE
+$ export OPENWEATHER_API_KEY="the openweather api key"             //TO CHANGE
+
 ```
 
 Or save them as environment variables in your `.bashrc`
 
 
 ```
-$ echo "SLACKBOT_API_KEY='the slackbot api key'" >> $HOME/.bashrc
-$ echo "OPENWEATHER_API_KEY='the openweather api key'" >> $HOME/.bashrc
+$ echo "WEATHERBOT_API_KEY='insert the weatherbot api key'"  >> $HOME/.bashrc    //TO CHANGE
+$ echo ECHOBOT_API_KEY='insert the echobot api key'" >> $HOME/.bashrc            //TO CHANGE
+$ echo OPENWEATHER_API_KEY='insert the openweather api key'"                     //TO CHANGE
+
 ```
 
 
@@ -46,14 +51,18 @@ Run the weatherbot:
 ```
 $ python3 weatherbot.py
 ```
+Run the echobot
+```
+$ python3 echobot.py
+```
 
-
+NLP Technique for Question 20
 
 In slack, grab the weather for any city with `@weatherbot <city>`. Weatherbot will use `difflib` to look for close matches of the input string with the list of all cities contained in `cities.csv`. If a close match is found, weatherbot grabs the city's weather data and pulls out the key features. 
 
-To make things really sick, weatherbot even maps each high-level weather description to an emoji!!!!
+To make things really cool, weatherbot even maps each high-level weather description to an emoji!!!!
 
-See the example below where a real live slack user with spelling difficulties gets real live weather data from weatherbot!!!
+See the example below where a real live slack user with spelling difficulties gets real live weather data frm wetherbt!!!
 
 
 
