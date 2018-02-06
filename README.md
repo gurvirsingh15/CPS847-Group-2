@@ -26,7 +26,7 @@ OPENWEATHER_API_KEY="the openweather api key"      //TO CHANGE
 Alternatively, you can export these before use:
 
 ```
-$ export WEATHERBOT_API_KEY="insert the weatherbot api key" //TO CHANGE
+$ export WEATHERBOT_API_KEY="insert the weatherbot api key"        //TO CHANGE
 $ export ECHOBOT_API_KEY="insert the echobot api key"              //TO CHANGE
 $ export OPENWEATHER_API_KEY="the openweather api key"             //TO CHANGE
 
