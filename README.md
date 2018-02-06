@@ -1,7 +1,7 @@
 # CPS847-Group-2
 
 
-## Weatherbot/ Echobot
+## Weatherbot & Echobot
 
 
 ### Requirements
