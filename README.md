@@ -67,3 +67,7 @@ See the example below where a real live slack user with spelling difficulties ge
 
 
 ![img](weatherbot.png)
+
+Echobot in action
+
+![img](echobot.png)
