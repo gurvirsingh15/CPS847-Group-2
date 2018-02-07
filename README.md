@@ -56,7 +56,7 @@ Run the echobot
 $ python3 echobot.py
 ```
 
-NLP Technique for Question 20
+**NLP Technique for Question 20
 
 In slack, grab the weather for any city with `@weatherbot <city>`. Weatherbot will use `difflib` to look for close matches of the input string with the list of all cities contained in `cities.csv`. If a close match is found, weatherbot grabs the city's weather data and pulls out the key features. 
 
@@ -68,6 +68,6 @@ See the example below where a real live slack user with spelling difficulties ge
 
 ![img](weatherbot.png)
 
-Echobot in action
+**Echobot in action
 
 ![img](echobot.png)
