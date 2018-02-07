@@ -7,10 +7,11 @@ from datetime import datetime as dt
 from slackclient import SlackClient
 
 sclient = SlackClient(os.environ["ECHOBOT_API_KEY"])
-echobot_id = 'U93PK0TCZ'
+echobot_id = 'U9514UW8K'
 
+mention_regex = "<@{}>(.*)".format(echobot_id)
 
-MENTION_REGEX = "<.*>(.*)"
+#MENTION_REGEX = "<.*>(.*)"
 #.format(('.*')
 
 #echobot_id)
@@ -18,7 +19,7 @@ MENTION_REGEX = "<.*>(.*)"
 
 
 def extract_message(message):
-    matches = re.search(MENTION_REGEX, message)
+    matches = re.search(mention_regex, message)
 
     if (not (matches == None)):
         return matches.group(1)

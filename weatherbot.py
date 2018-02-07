@@ -24,6 +24,9 @@ weatherbot_id = 'U93NEAZ24'
 
 mention_regex = "<@{}>(.*)".format(weatherbot_id)
 
+#MENTION_REGEX = "<.*>(.*)"
+#.format(('.*')
+
 base_url = 'https://api.openweathermap.org/data/2.5/weather'
 
 # from the world cities database : https://simplemaps.com/data/world-cities
@@ -73,6 +76,7 @@ def extract_message(message):
     """Extracts message content from a mention"""
     
     matches = re.search(mention_regex, message)
+    print(matches)
     if not (matches == None):
         return matches.group(1)
 
