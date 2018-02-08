@@ -130,7 +130,7 @@ def handle_message(message, channel, user):
                 
                 temp = int(data['main']['temp']) - 273   # kelvin to celsius
                 hum = data['main']['humidity']
-                vis = data['visibility']
+                #vis = data['visibility']
 
                 # add an emoji if we've got one
                 emoji = '' if not desc in emojis else ':{}:'.format(emojis[desc])
@@ -145,7 +145,7 @@ def handle_message(message, channel, user):
                         'Description:       {}  {}'.format(desc, emoji),
                         'Temperature:       {}'.format(temp),
                         'Humidity:            {}'.format(hum),
-                        'Visibility:            {}'.format(vis),
+                        #'Visibility:            {}'.format(vis),
                         sig
                     ])
                 
